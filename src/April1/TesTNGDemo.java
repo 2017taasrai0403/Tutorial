@@ -22,7 +22,7 @@ public class TesTNGDemo {
 		driver.get("http://www.google.co.in");
 		driver.manage().timeouts().pageLoadTimeout(50,TimeUnit.SECONDS);
 		
-		Assert.assertTrue(driver.getTitle().contains("Gmail"),"Google Page is displayed");
+		Assert.assertTrue(driver.getTitle().contains("Google"),"Google Page is displayed");
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		// Now you can do whatever you need to do with it, for example copy somewhere
 		FileUtils.copyFile(scrFile, new File("C:\\raiAutomation\\Tutorial\\src\\Pass_ScreenShot\\screenshot.png"));
