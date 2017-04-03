@@ -19,7 +19,7 @@ public class TesTNGDemo {
 	public void FirstTest() throws IOException
 	{
 		driver=new FirefoxDriver();
-		driver.get("http://www.google.com");
+		driver.get("http://www.google.co.in");
 		driver.manage().timeouts().pageLoadTimeout(50,TimeUnit.SECONDS);
 		
 		Assert.assertTrue(driver.getTitle().contains("Gmail"),"Google Page is displayed");
